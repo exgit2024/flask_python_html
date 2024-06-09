@@ -1,0 +1,18 @@
+{% extends "layout.html"%}
+{% block body %}
+<div class="container">
+   <center><h1>Register</h1></center>
+    <form action="" method="POST">
+         <div class="form-group">
+          E-MAIL ID<input type ="text" name="email" class= "form-control" palceholder="email" required>
+         </div>
+         <div class="form-group">
+            PASSWORD<input type ="password" name="password" class= "form-control" palceholder="password" required>
+         </div>
+         <div class="form-group">
+            CONFIRM PASSWORD<input type ="password" name="confirm" class= "form-control" palceholder="confirm" required>
+         </div>
+         <input class="btn btn-primary" type ="submit"></input>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <center><h2>RECIPES LIST</h2></center>
+            
+            <table class="table table-striped">
+                <tr>
+                    <th>TITLE</th>
+                    <th>DESCRIPTION</th>
+                    <th>INGREDIENTS</th>
+                    <th>INSTRUCTIONS</th>
+                    <th>CREATED BY</th>
+                </tr>
+                {% for row in recipes %}
+                <tr>
+                    <td>{{ row.title }}</td>
+                    <td>{{ row.description }}</td>
+                    <td>{{ row.ingredients}}</td>
+                    <td>{{ row.instructions }}</td>
+                    <td>{{ row.created_by }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>

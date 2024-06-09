@@ -1,0 +1,33 @@
+{%extends "layout.html" %}
+{%block body%}
+
+<div class="container">
+   <center><h2>CREATE RECIPES</h2></center>
+    <form action="" method="POST">
+        <div class="form-group">
+            Title<input type ="text" name="title" class= "form-control" palceholder="title" required>
+         </div>
+         <div class="form-group">
+            Description<input type ="text" name="description" class= "form-control" palceholder="description" required>
+         </div>
+         <div class="form-group">
+            Ingredients<input type ="text" name="ingredients" class= "form-control" palceholder="ingredients" required>
+         </div>
+         <div class="form-group">
+            Instructions<input type ="text" name="instructions" class= "form-control" palceholder="instructions" required>
+         </div>
+         
+         <input class="btn btn-primary" type ="submit"></input>
+    </form>
+</div>
+
+{%endblock%}
+
+
+
+
+
+
+
+
+
